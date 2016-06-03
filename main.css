@@ -1,30 +1,37 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  min-width: 62.5em;
-  margin: 0;
-}
-
-.page-wrapper {
-  padding-left: 15%;
-  padding-right: 15%;
-  position: relative;
+#navibar {
+  display: block;
+  z-index:1000;
+  margin-top: 0px !important;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 5px 0px;
+  background-color: red;
+  color: #051C50;
+  font-size: 24px;
+  position: fixed
 }
 
-#api-banner {
-  display: block;  
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
+#main-content {
+  padding-top: 120px;
+  z-index:999
 }
 
-#product-video {
-  width: 80%;
-  height: auto;
+.api-banner {
+  -webkit-align-content: center;
+  align-content: center;
+}
+
+.vid-link, .description-link, .purchase-link, .contact-link {
+  padding-top: 15px;
+}
+
+#navibar a:link, a:visited {
+  color: #27AD29;
+}
+
+#navibar a:hover {
+  color: #051C50;
 }
