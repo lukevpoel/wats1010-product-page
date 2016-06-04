@@ -2,14 +2,39 @@
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
 
-#navibar {
+/*CSS text colors and background colors that I can use
+Text-colors - All Dark
+  Purple - #3b0053;
+  Blue - #00008b;
+  Maroon - #5c0819;
+  Olive - #2a2400;
+  Green - #002a15;
+  
+
+Background-colors - all pastel
+  Green - #b3f8a2;
+  Yellow - #f7ed80;
+  Pink - #f78a8a;
+  Purple - #c1adf7; 
+  Baby blue - #83ccf5;
+*/
+
+/*general classes*/
+.row-height {
+  height: 100%;
+  min-height: 300px;
+}
+
+
+/*starting the navigation row______________________________________________________________________*/
+#navigation-bar {
   display: block;
   z-index:1000;
   margin-top: 0px !important;
   text-align: center;
   text-transform: capitalize;
   padding: 5px 0px;
-  background-color: red;
+  background-color: #b3f8a2;
   color: #051C50;
   font-size: 24px;
 }
@@ -23,15 +48,56 @@
   padding-top: 15px;
 }
 
-#navibar a:link, a:visited {
+#navigation-bar a:link, a:visited {
   color: #27AD29;
 }
 
-#navibar a:hover {
+#navigation-bar a:hover {
   color: #051C50;
 }
 
+
+/*starting the top banner row___________________________________________________________________________________________________*/
+#top-banner {
+  background-color: #f7ed80;
+
+}
+
+
+/*Starting the video row_________________________________________________________________________*/
+
+#ytvid {
+  background-color: #f78a8a;
+
+}
+
+.iframe-wrapper {
+  text-align:center;
+  width:100%;
+}
+
 iframe {
-  float: middle;
-  align-content: center;
+  width: 800;
+}
+
+
+/*starting the long descriptions row_______________________________________________________________________*/
+#long-description-and-testimonial {
+  background-color: #c1adf7; 
+
+}
+
+
+/*starting the feature list row_____________________________________________________________________________*/
+#feature-list-and-purchase {
+  min-height: 200em;
+  background-color: #83ccf5;
+
+}
+
+
+/*starting the contact bar row________________________________________________________________________________*/
+#contact-info-bar {
+  text-align: center;
+  background-color: #b3f8a2;
 }
