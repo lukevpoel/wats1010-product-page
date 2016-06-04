@@ -1,6 +1,7 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
+
 #navibar {
   display: block;
   z-index:1000;
@@ -11,12 +12,6 @@
   background-color: red;
   color: #051C50;
   font-size: 24px;
-  position: fixed
-}
-
-#main-content {
-  padding-top: 120px;
-  z-index:999
 }
 
 .api-banner {
@@ -34,4 +29,9 @@
 
 #navibar a:hover {
   color: #051C50;
+}
+
+iframe {
+  float: middle;
+  align-content: center;
 }
