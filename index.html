@@ -8,52 +8,46 @@
              engines. -->
         <title>API Superstore</title>
         <!-- Bootstrap CSS Framework -->
-        <!-- You can remove the ``link`` tags below if you don't want to use
-             Bootstrap with your site. If you choose to use Bootstrap, be sure
-             to reference the resources and the Bootstrap official
-             documentation: http://getbootstrap.com.
-
-             Please Note: This repo does not include the Bootstrap Javascript
-             plugins, so you cannot use the features documented under
-             "Javascript" on the Bootstrap documentation site. -->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
         <!-- End Bootstrap CSS Framework -->
 
         <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
              support bookmarking. -->
+        <link href='https://fonts.googleapis.com/css?family=Architects+Daughter|Special+Elite|Chewy|Kaushan+Script|Cinzel:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="main.css">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="favicon" href="favicon.ico">
 
     </head>
-    <body id="api-superstore" class="api-superstore" role="main-body">    
-      <div id="navigation-bar" class="container-fluid">
-          <div id="vid-link" class="vid-link col-sm-2" role="video-link">
+    <body id="api-superstore" class="api-superstore" role="main-body">
+      <div id="navigation-bar" class="container-fluid" role="navigation-bar">
+          <div id="vid-link" class="vid-link col-sm-2 col-xs-6" role="video-link">
             <a href=#product-video>Video</a>
           </div>
-          <div id="description-link" class="description-link col-sm-2" role="description-link">
+          <div id="description-link" class="description-link col-sm-2 col-xs-6" role="description-link">
             <a href=#>Description</a>
           </div>
           <div id="api-banner" class="api-banner col-sm-4" role="banner">
             <img src="assets/logos/api_superstore_logo_bg.png" alt="api-banner" width="80%">
           </div>
-          <div id="purchase-link" class="purchase-link col-sm-2" role="purchase-link">
+          <div id="purchase-link" class="purchase-link col-sm-2 col-xs-6" role="purchase-link">
             <a href=#>Purchase</a>
           </div>
-          <div id="contact-link" class="contact-link col-sm-2" role="contact-link">
+          <div id="contact-link" class="contact-link col-sm-2 col-xs-6" role="contact-link">
             <a href=#>Contact</a>
           </div>
       </div>
-      
-      
+
+
       <!-- Row Break -->
-      
-      
+
+
       <div id="top-banner" class="container-fluid">
           <div class="row-height">
              <div id="slogan" class="slogan col-sm-4" role="slogan">
-               Click, click, code!
+               <p><img src="design/images/click-code.jpg" alt="key background" id="key-background"></p>
+               <p><img src="design/images/click-code-logo.png" alt="click-code-logo" id="click-code"> </p>
              </div>
              <div id="med-description" class="med-description col-sm-8" role="product-description">
                The API Superstore has partnered with API providers across the Web to bring you easy
@@ -61,75 +55,61 @@
              </div>
           </div>
       </div>
-      
-      
+
+
       <!-- Row Break -->
-      
-      <div id="large-screen-row" class="container-fluid">
-          <div id="ytvid" class="container-fluid">
-              <div class="col-large-6 col-md-12">
-                <div class="row-height">
-                  <iframe src="https://www.youtube.com/embed/L48g1ZWLMdo" width="800" height="450" align="center" frameborder="0" allowfullscreen></iframe>
+            <div id="peach-background" class="container-fluid">
+              <div id="ytvid" class="col-lg-8 col-md-12">
+                    <iframe src="https://www.youtube.com/embed/L48g1ZWLMdo" width="800" height="450" align="center" frameborder="0" allowfullscreen></iframe>
+              </div>
+
+                <div id="long-description" class="long-description col-lg-4 col-md-6 col-sm-12 extra-padding" role="description">
+                  The API Superstore provides a catalog of third-party APIs that you can use to enhance your  business.
+                  From e-commerce to maps, API Superstore lists all of the services that customers
+                  expect and saves you the headache of sorting it out yourself! The longer you wait, the longer
+                  you’re not making more money and happier users!
+                </div>
+                <div id="feature-list" class="feature-list col-lg-4 col-md-6 col-sm-12 extra-padding" role="feature-list">
+                  Here is the feature list for API Superstore:
+                  Links to the best APIs from all over the web
+                  Pay with credit, check, IOU, wire transfer, PayPal, or livestock trade!
+                  Convenient catalog
+                  Elegant shopping experience
                 </div>
               </div>
-          </div>
-          
-          
           <!-- Row Break -->
-    
-          
-          <div id="long-description-and-testimonial" class="container-fluid">
-              <div class="row-height">
-                <div id="long-description" class="long-description container-fluid col-md-6" role="description">
-                  The API Superstore provides a catalog of third-party APIs that you can use to enhance your  business. 
-                  From e-commerce to maps, API Superstore lists all of the services that customers  
-                  expect and saves you the headache of sorting it out yourself! The longer you wait, the longer  
-                  you’re not making more money and happier users!  
-                </div>
-                <div id="testimonials" class="testimonials container-fluid col-md-6" role="testimonials">
-                  “This is the best website ever!” C.P. Yu, AmazingSite.com 
-                
-                  "I have really admired the way the API Superstore team has created a truly divine interface for
-                  browsing all that information that’s out there online for free. For a low monthly fee, I’m able to  
-                  more easily keep up with the churn of information that makes application development so  
-                  difficult, and API Superstore makes my world so much happier! Please don’t stop the rocking!”
-                  Amy Zon, Massive Anonymous Customer 
-                
-                  “Once again, I’m blown away by the amazing offerings of the API Superstore. You really are  
-                  SUPER!” Clara Cache
-                </div>
-            </div>
-          </div>
-        </div>  
-          <!-- Row Break -->
-          
-          <div id="feature=list-and-purchase" class="container-fluid">
+
+          <div id="testimonials-and-purchase" class="container-fluid">
                <div class="row-height">
-                 <div id="feature-list" class="feature-list container-fluid col-md-6" role="features">
-                      Here is the feature list for API Superstore:
-                      Links to the best APIs from all over the web
-                      Pay with credit, check, IOU, wire transfer, PayPal, or livestock trade! 
-                      Convenient catalog
-                      Elegant shopping experience 
+                 <div id="testimonials" class="testimonials container-fluid col-md-6" role="testimonials">
+                   <p>Testimonials</p>
+                   <dl>
+                      <dt>C.P. Yu, AmazingSite.com</dt>
+                      <dd>“This is the best website ever!”</dd>
+                      <dt>Amy Zon, Massive Anonymous Customer</dt>
+                      <dd>"I have really admired the way the API Superstore team has created a truly divine interface for browsing all that information that’s out there online for free. For a low monthly fee, I’m able to more easily keep up with the churn of information that makes application development so difficult, and API Superstore makes my world so much happier! Please don’t stop the rocking!”</dd>
+                      <dt>Clara Cache</dt>
+                      <dd>“Once again, I’m blown away by the amazing offerings of the API Superstore. You really are SUPER!”</dd>
+                    </dl>
                  </div>
                  <div id="purchase" class="purchase container-fluid col-md-6" role="purchase-options">
                     purchase our apisuperstore
                  </div>
                </div>
           </div>
-      
-      
+
+
       <!-- Row Break -->
 
-      
+
       <div id="contact-info-bar" class="container-fluid">
-            <div id="phone-contact" class="phone-contact col-sm-4" role="phone-number">Phone: 206-555-1234</div>  
-            <div id="email-contact" class="email-contact col-sm-4" role="email">Email: info@apisuperstore.com</div>
-            <div id="location" class="location col-sm-4" role="location">Location: Seattle, Washington, USA</div>
+            <div id="phone-contact" class="phone-contact col-xs-4" role="phone-number">Phone: 206-555-1234</div>
+            <div id="email-contact" class="email-contact col-xs-4" role="email">Email: info@apisuperstore.com</div>
+            <div id="location" class="location col-xs-4" role="location">Location: Seattle, Washington, USA</div>
       </div>
-        
-        <!-- Original code that wasn't quite working. using elements but mostly starting over. 
-            
+
+        <!-- Original code that wasn't quite working. using elements but mostly starting over.
+
         <div id="navibar" class="navibar container-fluid" role="navibar">
           <div id="vid-link" class="vid-link col-sm-2" role="video-link">
             <a href=#product-video>Video</a>
@@ -147,11 +127,11 @@
             <a href=#>Contact</a>
           </div>
         </div>
-         
-        
-        
-        
-          
+
+
+
+
+
           <div id="primary-content" class="primary-content container-fluid" role="primary-content">
             <div id="api-header" class="api-header container-fluid" role="header">
              <div id="slogan" class="slogan col-sm-4" role="slogan">
@@ -162,9 +142,9 @@
                access to the hottest third-party services and features. Get started today!
              </div>
             </div>
-            
+
             <div id="product-video" class="product-video container" width="900px" role="video">
-              
+
               <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/L48g1ZWLMdo" width="800" height="450" align="center" frameborder="0" allowfullscreen></iframe>
               </div>
@@ -172,25 +152,25 @@
             <div id="description-testimonial" class="description-testimonial container-fluid" role="description-and-testimonials">
                   <div id="long-description" class="long-description container-fluid col-md-6" role="description">
                     The API Superstore provides a catalog of third-party APIs that you can use to enhance your  business. 
-                    From e-commerce to maps, API Superstore lists all of the services that customers  
-                    expect and saves you the headache of sorting it out yourself! The longer you wait, the longer  
-                    you’re not making more money and happier users!  
+                    From e-commerce to maps, API Superstore lists all of the services that customers 
+                    expect and saves you the headache of sorting it out yourself! The longer you wait, the longer 
+                    you’re not making more money and happier users! 
                   </div>
                   <div id="testimonials" class="testimonials container-fluid col-md-6" role="testimonials">
                     “This is the best website ever!” C.P. Yu, AmazingSite.com 
-                  
+
                     "I have really admired the way the API Superstore team has created a truly divine interface for
-                    browsing all that information that’s out there online for free. For a low monthly fee, I’m able to  
-                    more easily keep up with the churn of information that makes application development so  
+                    browsing all that information that’s out there online for free. For a low monthly fee, I’m able to 
+                    more easily keep up with the churn of information that makes application development so 
                     difficult, and API Superstore makes my world so much happier! Please don’t stop the rocking!”
                     Amy Zon, Massive Anonymous Customer 
-                  
-                    “Once again, I’m blown away by the amazing offerings of the API Superstore. You really are  
+
+                    “Once again, I’m blown away by the amazing offerings of the API Superstore. You really are 
                     SUPER!” Clara Cache
                   </div>
             </div>
             <div id="features-purchase" class="features-purchase container-fluid" role="testimonials-and-purchase">
-              
+
               <div id="feature-list" class="feature-list container-fluid col-md-6" role="features">
                   Here is the feature list for API Superstore:
                   Links to the best APIs from all over the web
@@ -203,10 +183,10 @@
               </div>
             </div>
           </div>
-    
-              
-              
-              
+
+
+
+
           <div id="share-bar" class="share-bar container-fluid" role="share-links">
             <ul>
               <li>twitter</li>
@@ -215,20 +195,11 @@
             </ul>
           </div>
           <footer id="contact-info" class="contact-info container-fluid" role="contact">
-            <div id="phone-contact" class="phone-contact col-sm-3" role="phone-number">Phone: 206-555-1234</div>  
+            <div id="phone-contact" class="phone-contact col-sm-3" role="phone-number">Phone: 206-555-1234</div> 
             <div id="email-contact" class="email-contact col-sm-3" role="email">Email: info@apisuperstore.com</div>
             <div id="location" class="location col-sm-3" role="location">Location: Seattle, Washington, USA</div>
           </footer>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <!-- TODO: Create a call to action link to get users to sign up for the
-             service. -->
+
+
     </body>
 </html>
