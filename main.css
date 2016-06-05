@@ -38,7 +38,7 @@ body {
 }
 
 .extra-padding {
-  padding: 10px
+  padding: 15px
 }
 
 /*custom headers*/
@@ -47,10 +47,19 @@ body {
 }
 
 .h2c {
-
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
 }
 
 .h3c {
+
+}
+
+.btn1 {
+
+}
+
+.btn1:hover {
 
 }
 
@@ -67,8 +76,24 @@ body {
 }
 
 .api-banner {
-  -webkit-align-content: center;
-  align-content: center;
+
+}
+
+.api-banner img{
+  height: 100%;
+  max-height: 35px;
+  position: absolute;
+  display: block;
+  width: 10%;
+  max-width: 35px;
+}
+
+#chair-left {
+  left: 5px;
+}
+
+#chair-right {
+  right: 0px;
 }
 
 .vid-link, .description-link, .purchase-link, .contact-link {
@@ -117,8 +142,6 @@ body {
 #med-description {
   position: relative;
   padding: 1%;
-  font-family: 'Cinzel', serif;
-  font-size: 28px;
 }
 
 
@@ -126,10 +149,8 @@ body {
 
 #peach-background {
   background-color: #f78a8a;
+  padding: 10px;
 }
-
-
-
 
 iframe {
   display:block;
