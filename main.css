@@ -9,22 +9,50 @@ Text-colors - All Dark
   Maroon - #5c0819;
   Olive - #2a2400;
   Green - #002a15;
-  
+
+Text-fonts
+  font-family: 'Architects Daughter', cursive;
+  font-family: 'Special Elite', cursive;
+  font-family: 'Chewy', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Cinzel', serif;
 
 Background-colors - all pastel
   Green - #b3f8a2;
   Yellow - #f7ed80;
   Pink - #f78a8a;
-  Purple - #c1adf7; 
+  Purple - #c1adf7;
   Baby blue - #83ccf5;
 */
 
 /*general classes*/
-.row-height {
-  height: 100%;
-  min-height: 300px;
+body {
+  color: #5c0819;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.8em;
 }
 
+.row-height {
+  height: 100%;
+  min-height: 200px;
+}
+
+.extra-padding {
+  padding: 10px
+}
+
+/*custom headers*/
+.h1c {
+
+}
+
+.h2c {
+
+}
+
+.h3c {
+
+}
 
 /*starting the navigation row______________________________________________________________________*/
 #navigation-bar {
@@ -35,7 +63,6 @@ Background-colors - all pastel
   text-transform: capitalize;
   padding: 5px 0px;
   background-color: #b3f8a2;
-  color: #051C50;
   font-size: 24px;
 }
 
@@ -45,56 +72,96 @@ Background-colors - all pastel
 }
 
 .vid-link, .description-link, .purchase-link, .contact-link {
-  padding-top: 15px;
+  padding-top: 5px;
 }
 
-#navigation-bar a:link, a:visited {
-  color: #27AD29;
+#navigation-bar a:link {
+  color: #2a2400;
+}
+
+#navigation-bar a:visited {
+    color: #white;
 }
 
 #navigation-bar a:hover {
-  color: #051C50;
+  color: #00008b;
 }
 
 
 /*starting the top banner row___________________________________________________________________________________________________*/
 #top-banner {
+  padding: 10px 0px;
   background-color: #f7ed80;
+}
 
+#key-background {
+  width: 80%;
+  max-width: 300px;
+  height: 80%;
+  max-height: 300px;
+  padding-top: 5px;
+  position: relative;
+  border-radius: 10px;
+}
+
+#click-code {
+  width: 65%;
+  max-width: 240px;
+  height: 20%;
+  max-height: 100px;
+  position: absolute;
+  left: 10%;
+  bottom: 40%;
+}
+
+#med-description {
+  position: relative;
+  padding: 1%;
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
 }
 
 
-/*Starting the video row_________________________________________________________________________*/
+/*Starting the video and description row_________________________________________________________________________*/
 
-#ytvid {
+#peach-background {
   background-color: #f78a8a;
-
 }
 
-.iframe-wrapper {
-  text-align:center;
-  width:100%;
-}
+
+
 
 iframe {
+  display:block;
+  margin: auto;
   width: 800;
 }
 
 
-/*starting the long descriptions row_______________________________________________________________________*/
-#long-description-and-testimonial {
-  background-color: #c1adf7; 
-
-}
-
-
-/*starting the feature list row_____________________________________________________________________________*/
-#feature-list-and-purchase {
-  min-height: 200em;
+/*starting the testimonials row_____________________________________________________________________________*/
+#testimonials-and-purchase {
   background-color: #83ccf5;
-
 }
 
+#testimonials {
+  font-family: 'Cinzel', serif;
+}
+
+#testimonials dl dt {
+  font-family: 'Chewy', cursive;
+  font-size-adjust: 200%;
+}
+
+#testimonials-and-purchase dl dd {
+  font-family: 'Kaushan Script', cursive;
+  padding-left: 10px;
+}
+
+
+#purchase {
+  height:auto;
+  min-height: 200px
+}
 
 /*starting the contact bar row________________________________________________________________________________*/
 #contact-info-bar {
