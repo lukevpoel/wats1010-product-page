@@ -13,12 +13,12 @@ But that makes it all the more fun, right?
 As you work through this project, you will address six different
 requirements:
 
-1. Introduce the product
-2. Provide access to the explainer video (https://www.youtube.com/watch?v=L48g1ZWLMdo)
-3. List features
-4. Provide user testimonials
+1. DONE Introduce the product
+2. DONE Provide access to the explainer video (https://www.youtube.com/watch?v=L48g1ZWLMdo)
+3. DONE List features
+4. DONE Provide user testimonials
 5. Provide ability for users to share links to the product page
-6. Call to action link to get user to buy product
+6. DONE Call to action link to get user to buy product
 
 To work through all these requirements and create an elegant page, the larger
 project is broken into a few smaller Project Assignments. Below each phase

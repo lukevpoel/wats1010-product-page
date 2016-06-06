@@ -4,16 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Add proper head tag to provide a page description for search
-             engines. -->
+        <meta name="keywords" content="API, superstore, CSS, HTML, HTML5, coding, code">
+        <meta name="description" content="Bringing your most important coding tools and APIs to you">
         <title>API Superstore</title>
         <!-- Bootstrap CSS Framework -->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
         <!-- End Bootstrap CSS Framework -->
 
-        <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
-             support bookmarking. -->
         <link href='https://fonts.googleapis.com/css?family=Architects+Daughter|Special+Elite|Chewy|Kaushan+Script|Cinzel:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="main.css">
         <link rel="apple-touch-icon" href="design/images/finger-click-icon.png">
@@ -21,23 +19,25 @@
 
     </head>
     <body id="api-superstore" class="api-superstore" role="main-body">
+      <!--navigation bar with links to all the different sections.
+      it could have been fixed but it's a relatively short page.-->
       <div id="navigation-bar" class="container-fluid" role="navigation-bar">
-          <div id="vid-link" class="vid-link col-sm-2" role="video-link"> <!--http://image005.flaticon.com/1/png/512/0/375.png-->
-            <a href=#product-video><img src="design/images/play-button.png" alt="Video button" class="banner-sides icon-left">VIDEO</a>
+          <div id="vid-link" class="vid-link col-xs-2" role="video-link"> <!--http://image005.flaticon.com/1/png/512/0/375.png-->
+            <a href="#ytvid"><img src="design/images/play-button.png" alt="Video button" class="banner-sides icon-left">VIDEO</a>
           </div>
-          <div id="description-link" class="description-link col-sm-2" role="description-link"> <!-- https://cdn1.iconfinder.com/data/icons/basic-ui-elements-round/700/06_menu_stack-2-128.png -->
-            <a href=#><img src="design/images/menu-button.png" alt="Description" class="banner-sides icon-left">DETAILS</a>
+          <div id="description-link" class="description-link col-xs-2" role="description-link"> <!-- https://cdn1.iconfinder.com/data/icons/basic-ui-elements-round/700/06_menu_stack-2-128.png -->
+            <a href="#long-description"><img src="design/images/menu-button.png" alt="Description" class="banner-sides icon-left">DETAILS</a>
           </div>
-          <div id="api-banner" class="api-banner col-sm-4" role="banner">
+          <div id="api-banner" class="api-banner col-xs-4" role="banner">
               <img src="design/images/director-chair.png" alt="Director's chair" class="banner-sides icon-left">
               <img src="design/images/director-chair.png" alt="Director's chair" class="banner-sides icon-right">
               <p><div class="h2c"><a href="#"> API SUPERSTORE</a></div></p>
           </div>
-          <div id="purchase-link" class="purchase-link col-sm-2" role="purchase-link"> <!-- https://www.onlinewebfonts.com/icon/51531 -->
-            <a href=#><img src="design/images/money-icon.png" alt="Purchase button" class="banner-sides icon-right">BUY</a>
+          <div id="purchase-link" class="purchase-link col-xs-2" role="purchase-link"> <!-- https://www.onlinewebfonts.com/icon/51531 -->
+            <a href="#purchase"><img src="design/images/money-icon.png" alt="Purchase button" class="banner-sides icon-right">BUY</a>
           </div>
-          <div id="contact-link" class="contact-link col-sm-2" role="contact-link"> <!-- https://cdn1.iconfinder.com/data/icons/phones-2/512/phone_symbol_1-128.png -->
-            <a href=#><img src="design/images/phone-icon.png" alt="Contact Button" class="banner-sides icon-right">CONTACT</a>
+          <div id="contact-link" class="contact-link col-xs-2" role="contact-link"> <!-- https://cdn1.iconfinder.com/data/icons/phones-2/512/phone_symbol_1-128.png -->
+            <a href="#contact-info-bar"><img src="design/images/phone-icon.png" alt="Contact Button" class="banner-sides icon-right">CONTACT</a>
           </div>
       </div>
 
@@ -47,11 +47,11 @@
 
       <div id="top-banner" class="container-fluid">
           <div class="row-height">
-             <div id="slogan" class="slogan col-sm-4" role="slogan">
+             <div id="slogan" class="slogan col-xs-4" role="slogan">
                <p><img src="design/images/click-code.jpg" alt="key background" id="key-background"></p>
                <p><img src="design/images/click-code-logo.png" alt="click-code-logo" id="click-code"> </p>
              </div>
-             <div id="med-description" class="med-description col-sm-8 h2c" role="product-description">
+             <div id="med-description" class="med-description col-xs-8 h3c" role="product-description">
                The API Superstore has partnered with API providers across the Web to bring you easy
                access to the hottest third-party services and features. Get started today!
              </div>
@@ -68,21 +68,27 @@
                   </div>
                 </div>
               </div>
-
+              <!--this whole area should flow from 3 rows of content to two rows
+              with 2 columns on the bottom row to 2 columns with 2 rows in the left column.
+              I didn't have an effective way of resizing the video based on viewport size.
+              So I decided to flow the content so things didn't feel vacant.
+              Only problem is that changed my background options.-->
                 <div id="long-description" class="long-description col-lg-4 col-md-6 col-sm-12 extra-padding" role="description">
-                  The API Superstore provides a catalog of third-party APIs that you can use to enhance your  business.
+                  <span class="h2c">The API Superstore</span> provides a catalog of third-party APIs that you can use to enhance your  business.
                   From e-commerce to maps, API Superstore lists all of the services that customers
                   expect and saves you the headache of sorting it out yourself! The longer you wait, the longer
                   you’re not making more money and happier users!
                 </div>
                 <div id="feature-list" class="feature-list col-lg-4 col-md-6 col-sm-12 extra-padding" role="feature-list">
-                  Here is the feature list for API Superstore:
-                  Links to the best APIs from all over the web
-                  Pay with credit, check, IOU, wire transfer, PayPal, or livestock trade!
-                  Convenient catalog
-                  Elegant shopping experience
+                  <p><div class="h2c">API Superstore Features:</div></p>
+                  <ul>
+	                  <li>Links to the best APIs from all over the web</li>
+	                  <li>Pay with credit, check, IOU, wire transfer, PayPal, or livestock trade!</li>
+	                  <li>Convenient catalog</li>
+	                  <li>Elegant shopping experience</li>
+                  </ul>
                 </div>
-              </div>
+          </div>
           <!-- Row Break -->
 
           <div id="testimonials-and-purchase" class="container-fluid">
@@ -99,7 +105,16 @@
                     </dl>
                  </div>
                  <div id="purchase" class="purchase container-fluid col-md-6" role="purchase-options">
-                    purchase our apisuperstore
+                    <p><span class="h2c">Puchase APIs</span></p>
+                    <p>We offer many ways to pay for APIs. Choose your preferred method</p>
+                    <ul>
+                      <li><a href="http://paypal.com"><img src="design/images/credit-button.jpg" alt="pay with credit card"></a></li>
+                      <li><a href="http://paypal.com"><img src="design/images/check-button.jpg" alt="pay with check"></a></li>
+                      <li><a href="http://paypal.com"><img src="design/images/iou-button.jpg" alt="pay with IOU"></a></li>
+                      <li><a href="http://paypal.com"><img src="design/images/wire-button.jpg" alt="pay with wire transfer"></a></li>
+                      <li><a href="http://paypal.com"><img src="design/images/livestock-button.jpg" alt="pay with livestock-trade"></a></li>
+                      <li><a href="http://paypal.com"><img src="design/images/paypal-button.jpg" alt="pay with paypal"></a></li>
+                    </ul>
                  </div>
                </div>
           </div>
@@ -112,6 +127,36 @@
             <div id="phone-contact" class="phone-contact col-xs-4" role="phone-number"><a href="tel:+12065551234" alt="Phone" class="btn1"><img src="design/images/phone-icon.png" class="icon-image">Give Us a Call!</a></div>
             <div id="email-contact" class="email-contact col-xs-4" role="email"><a href="mailto:nowhere@mozilla.org" alt="Email" class="btn1"><img src="design/images/email-icon.png" class="icon-image">Send Us an Email!</a></div>
             <div id="location" class="location col-xs-4" role="location"><a href="https://goo.gl/maps/LPPjExcmDkt" alt="Seattle map" class="btn1"><img src="design/images/map-icon.png" class="icon-image">Visit Us!</a></div>
+      </div>
+
+
+<!--Setting up the sidebar with links for sharing on social site-->
+      <div id="floating-sidebar" class="social-sidebar" role="social-sidebar">
+        <div id="social-text">Social links</div>
+        <ul id="social-sidebar">
+            <!-- links aren't working and I'm not quite sure why -->
+            <li>
+              <a href="http://twitter.com" class="entypo-twitter"><span>Twitter</span></a>
+            </li>
+            <li>
+              <a href="http://facebook.com" class="entypo-facebook"><span>Facebook</span></a>
+            </li>
+            <li>
+              <a href="http://plus.google.com" class="entypo-gplus"><span>Google+</span></a>
+            </li>
+            <li>
+              <a href="http://dribbble.com" class="entypo-dribbble"><span>Dribbble</span></a>
+            </li>
+            <li>
+              <a href="http://dropbox.com" class="entypo-dropbox"><span>Dropbox</span></a>
+            </li>
+            <li>
+              <a href="http://github.com" class="entypo-github"><span>Github</span></a>
+            </li>
+            <li>
+              <a href="http://evernote.com" class="entypo-evernote"><span>Evernote</span></a>
+            </li>
+          </ul>
       </div>
 
         <!-- Original code that wasn't quite working. using elements but mostly starting over.
