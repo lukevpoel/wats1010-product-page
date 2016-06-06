@@ -30,6 +30,7 @@ body {
   color: #5c0819;
   font-family: 'Architects Daughter', cursive;
   font-size: 1.8em;
+  min-width: 1050px;
 }
 
 .row-height {
@@ -41,18 +42,16 @@ body {
   padding: 15px
 }
 
-/*custom headers*/
-.h1c {
-
-}
-
+/*custom header font styles*/
 .h2c {
   font-family: 'Cinzel', serif;
   font-size: 28px;
+  font-weight: bolder;
 }
 
 .h3c {
-
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
 }
 
 
@@ -63,7 +62,8 @@ body {
 }
 
 .btn1 {
-
+  border: 0px;
+  border-radius: 10px;
 }
 
 .btn1:hover {
@@ -83,7 +83,22 @@ body {
   max-width: 35px;
 }
 
-/*starting the navigation row______________________________________________________________________*/
+/*background hover effects*/
+#navigation-bar, #contact-info-bar, #top-banner, #testimonials-and-purchase, #peach-background {
+  color: #2a2400;
+  transition: all 0.5s ease;
+  padding: 10px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+#navigation-bar:hover, #contact-info-bar:hover, #top-banner:hover, #testimonials-and-purchase:hover, #peach-background:hover  {
+  color: #00008b;
+  background-color: #c1adf7;
+}
+
+/*starting the navigation row______________________________________________________________________
+Also some contact bar css in here*/
 #navigation-bar {
   display: block;
   z-index:1000;
@@ -93,10 +108,6 @@ body {
   padding: 5px 0px;
   background-color: #b3f8a2;
   font-size: 24px;
-}
-
-.api-banner {
-
 }
 
 #navigation-bar img{
@@ -122,21 +133,15 @@ body {
   padding-top: 5px;
 }
 
-#navigation-bar, #contact-info-bar {
-  color: #2a2400;
-  transition: all 0.5s ease;
-  padding: 10px;
-}
-
-#navigation-bar:hover, #contact-info-bar:hover {
-  color: #00008b;
-  background-color: white;
-}
+/*thought about having a fixed navigation bar. But it doesn't make sense
+on a relatively short page like this. All buttons have hover effects*/
 
 #navigation-bar a:link, #contact-info-bar a:link {
   color: #2a2400;
   transition: all 0.5s ease;
   padding: 10px;
+  border: 0px;
+  border-radius: 10px;
 }
 
 #navigation-bar a:visited, #contact-info-bar a:visited {
@@ -159,11 +164,13 @@ body {
 }
 
 
-/*starting the top banner row___________________________________________________________________________________________________*/
+/*starting the top banner row___________________________________________________________________________________________________
+just placement for everything*/
 #top-banner {
   padding: 10px 0px;
   background-color: #f7ed80;
 }
+
 
 #key-background {
   width: 80%;
@@ -198,6 +205,7 @@ body {
   padding: 10px;
 }
 
+/*helping to center the video*/
 iframe {
   display:block;
   margin: auto;
@@ -224,14 +232,160 @@ iframe {
   padding-left: 10px;
 }
 
-
+/*purchase buttons - images with hover borders*/
 #purchase {
   height:auto;
   min-height: 200px
 }
 
+#purchase li {
+  padding: 10px;
+  background: inherit;
+  border-top: 0px solid #eee;
+  border-radius: 10px;
+}
+
+#purchase li img:hover {
+  border: 5px solid #f7ed80;
+  border-radius: 10px;
+}
+
+
 /*starting the contact bar row________________________________________________________________________________*/
 #contact-info-bar {
   text-align: center;
   background-color: #b3f8a2;
+}
+
+
+
+/*sidebar css */
+/*place text along the side to show customers where social links are*/
+#social-text {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px;
+  position: fixed;
+  right: -60px;
+  top: 280px;
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+
+#social-sidebar {
+  opacity: .4;
+	right: 0;
+	position: fixed;
+	top: 200px;
+  list-style-type: none;
+}
+
+#social-sidebar:hover {
+  opacity: .9;
+}
+
+/*sidebar for links that lead to social network sharing*/
+#social-sidebar a {
+	background-color: #b3f8a2;
+	color: #fff;
+  text-decoration: none;
+	display: block;
+	height: 30px;
+	width: 30px;
+	font-size: 18px;
+	line-height: 30;
+	position: relative;
+	text-align: center;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 5px;
+}
+
+#social-sidebar a:hover span {
+	right: 120%;
+	opacity: 1;
+}
+
+#social-sidebar a span {
+  font: 12px "Open Sans", sans-serif;
+  text-transform: uppercase;
+	border-radius: 5px;
+	line-height: 24px;
+	right: -100%;
+	margin-top: -16px;
+	opacity: 0;
+	padding: 2px 4px;
+	position: absolute;
+	transition: opacity .3s, left .4s;
+	top: 50%;
+	z-index: -1;
+}
+
+#social-sidebar a span:before {
+	content: "";
+	display: block;
+	height: 8px;
+  width: 8px;
+	right: -4px;
+	margin-top: -4px;
+	position: absolute;
+	top: 50%;
+	transform: rotate(45deg);
+}
+
+#social-sidebar a[class*="twitter"]:hover,
+#social-sidebar a[class*="twitter"] span,
+#social-sidebar a[class*="twitter"] span:before {
+  background: #00aced;
+  border: 0px;
+  border-radius: 5px;
+}
+
+#social-sidebar a[class*="facebook"]:hover,
+#social-sidebar a[class*="facebook"] span,
+#social-sidebar a[class*="facebook"] span:before {
+  border: 0px;
+  border-radius: 5px;
+  background: #3B5998;
+}
+
+#social-sidebar a[class*="gplus"]:hover,
+#social-sidebar a[class*="gplus"] span,
+#social-sidebar a[class*="gplus"] span:before {
+  background: #E34429;
+  border: 0px;
+  border-radius: 5px;
+}
+
+#social-sidebar a[class*="dribbble"]:hover,
+#social-sidebar a[class*="dribbble"] span,
+#social-sidebar a[class*="dribbble"] span:before {
+  border: 0px;
+  border-radius: 5px;
+  background: #ea4c89;
+}
+
+#social-sidebar a[class*="dropbox"]:hover,
+#social-sidebar a[class*="dropbox"] span,
+#social-sidebar a[class*="dropbox"] span:before {
+  border: 0px;
+  border-radius: 5px;
+  background: #8DC5F2;
+}
+
+#social-sidebar a[class*="github"]:hover,
+#social-sidebar a[class*="github"] span,
+#social-sidebar a[class*="github"] span:before {
+  border: 0px;
+  border-radius: 5px;
+  background: #9C7A5B;
+}
+
+#social-sidebar a[class*="evernote"]:hover,
+#social-sidebar a[class*="evernote"] span,
+#social-sidebar a[class*="evernote"] span:before {
+  border: 0px;
+  border-radius: 5px;
+  background: #6BB130;
 }
