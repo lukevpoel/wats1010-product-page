@@ -263,7 +263,15 @@ iframe {
 	max-height: 60px;
 }
 
-
+.icon-image-contact {
+  height: 100%;
+  max-height: 35px;
+  position: absolute;
+	bottom: 2px;
+  display: block;
+  width: 10%;
+  max-width: 35px;
+}
 
 /*sidebar css */
 /*place text along the side to show customers where social links are*/
